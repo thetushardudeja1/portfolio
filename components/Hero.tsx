@@ -25,7 +25,6 @@ const Hero: React.FC = () => {
   }
 
   // Calculate rotation values (Parallax)
-  // Mouse X affects Y rotation, Mouse Y affects X rotation
   const rotateY = useTransform(mouseX, [-0.5, 0.5], [-15, 15]);
   const rotateX = useTransform(mouseY, [-0.5, 0.5], [15, -15]);
 
@@ -54,11 +53,12 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.9] uppercase"
           >
-            Where AI Meets Silicon, <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-              Engineering Intelligence at the Core
+            Hey I'AM <br />
+            TUSHAR DUDEJA <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-3xl md:text-5xl lg:text-6xl normal-case font-bold tracking-tight block mt-2">
+              Where AI Meets Silicon
             </span>
           </motion.h1>
 
@@ -161,9 +161,9 @@ const Hero: React.FC = () => {
                     <rect x="0" y="0" width="12" height="2" fill="#61BB46" />
                     <rect x="0" y="2" width="12" height="2" fill="#FDB827" />
                     <rect x="0" y="4" width="12" height="2" fill="#F5821F" />
-                    <rect x="0" y="6" width="12" height="2" fill="#E03A3E" />
-                    <rect x="0" y="8" width="12" height="2" fill="#963D97" />
-                    <rect x="0" y="10" width="12" height="2" fill="#009DDC" />
+                    <rect x="0" y="4" width="12" height="2" fill="#E03A3E" />
+                    <rect x="0" y="6" width="12" height="2" fill="#963D97" />
+                    <rect x="0" y="8" width="12" height="2" fill="#009DDC" />
                   </g>
                   
                   {/* Vents (Bottom corners) */}
